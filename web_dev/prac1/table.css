@@ -47,7 +47,6 @@ td {
 
 #logo {
     height: 100%;
-
     background-color: burlywood;
     border: 1px solid brown;
     border-radius: 5px;
@@ -69,7 +68,6 @@ td {
     background-color: burlywood;
     border: 1px solid brown;
     border-radius: 5px;
-    height: calc(100% - 4%);
     margin: 2%;
     padding: 2px 0;
     
