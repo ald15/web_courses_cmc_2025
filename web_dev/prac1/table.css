@@ -36,8 +36,6 @@ td {
 }
 
 #logo_block {
-
-    min-height: 75%;
 }
 
 #logo_block td {
@@ -46,12 +44,10 @@ td {
 }
 
 #logo {
-    height: 100%;
-    background-color: burlywood;
+    height: 3vw;
     border: 1px solid brown;
-    border-radius: 5px;
-    height: calc(100% - 16px);
     padding: 8px 0;
+    vertical-align: middle;
 }
 
 #nav_btns_block {
