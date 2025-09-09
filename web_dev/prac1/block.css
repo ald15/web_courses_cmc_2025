@@ -1,6 +1,8 @@
 * {
     text-decoration: none;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
 }
 
 html {
@@ -16,20 +18,8 @@ header, footer {
     padding: 1rem 0;
 }
 
-header {
-    height: 8.3rem;
-}
-
 footer {
     height: 3.3rem;
-    justify-content: center;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    background: antiquewhite;
     justify-content: center;
 }
 
@@ -61,7 +51,6 @@ body {
     width: 100%;
     align-content: center;
     justify-content: center;
-    
 }
 
 #logo {
@@ -95,6 +84,8 @@ main {
     flex: 1;
     align-items: center;
     flex-direction: column;
+    background: antiquewhite;
+    justify-content: center;
 }
 
 main h1 {
@@ -109,6 +100,6 @@ main hr {
 }
 
 main p {
-    padding: 2% 0;
+    padding: 2rem 0;
     text-align: left;
 }

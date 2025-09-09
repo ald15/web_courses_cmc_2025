@@ -2,6 +2,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;  
 }
 
 html {
@@ -18,9 +19,7 @@ table {
 td {
     font-size: large;
     font-weight: bold;
-    /* border: 2px solid grey; */
     text-align: center;
-    /* padding: 0; */
 }
 
 #table_body {
@@ -41,12 +40,6 @@ td {
     height: 3.3rem;
 }
 
-#nav {
-}
-
-#logo_block {
-}
-
 #logo_block td {
     height: 2rem; 
 }
@@ -60,7 +53,6 @@ td {
 #nav td {
     vertical-align: middle;
 }
-
 
 .nav_btn {
     display: block;
@@ -96,6 +88,6 @@ td {
 }
 
 #main p {
-    padding: 2% 0;
+    padding: 2rem 0;
     text-align: left;
 }
