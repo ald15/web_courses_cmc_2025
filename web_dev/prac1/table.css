@@ -1,6 +1,11 @@
 * {
     text-decoration: none;
     margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 16px;
 }
 
 table {
@@ -25,11 +30,15 @@ td {
 
 #header, #footer {
     background-color: cadetblue;
-    height: 10%;
+    padding: 1rem 0;
 }
 
 #header {
-    padding: 1% 2%;
+    height: 8.3rem;
+}
+
+#footer {
+    height: 3.3rem;
 }
 
 #nav {
@@ -39,43 +48,54 @@ td {
 }
 
 #logo_block td {
-    border: 1px solid brown;
-    padding: 0;
+    height: 2rem; 
 }
 
 #logo {
-    height: 3vw;
-    border: 1px solid brown;
-    padding: 8px 0;
+    height: 2rem;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+}
+
+#nav td {
     vertical-align: middle;
 }
 
-#nav_btns_block {
-    /* background-color: burlywood; */
-    height: 25%;
-}
-
-#nav_btns_block td {
-    padding: 0;
-    height: 100%;
-}
 
 .nav_btn {
+    display: block;
     background-color: burlywood;
-    border: 1px solid brown;
+    border: 0.15rem solid brown;
     border-radius: 5px;
-    margin: 2%;
-    padding: 2px 0;
-    
-    
-}
-
-#main {
-   
-    width: 80%;
+    line-height: 1rem;
+    margin: 1rem;
+    padding: 1rem 0;    
 }
 
 #right_side, #left_side {
     background-color: brown;
     width: 10%;
+}
+
+#main {
+    align-items: center;
+    width: 80%;
+    padding: 2rem;
+    font-size: medium;
+    font-weight: normal;
+    text-align: center;
+}
+
+#main h1 {
+    padding: 2rem 0;
+}
+
+#main hr {
+    margin: 2rem 10%;
+    border: 0.05rem solid black;
+}
+
+#main p {
+    padding: 2% 0;
+    text-align: left;
 }
