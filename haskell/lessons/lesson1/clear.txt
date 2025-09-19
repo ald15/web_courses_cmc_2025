@@ -1,1 +1,5 @@
+// Windows
 rm *.exe ; rm *.o ; rm *.hi
+
+// Linux
+rm *.exe && rm *.o && rm *.hi
