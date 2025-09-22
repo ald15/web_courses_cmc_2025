@@ -57,4 +57,4 @@ main = do
         print("#4:", replicate' 5 'm')
         print("#5:", zip' [1,2,3,4] ['a','b','c'])
         print("#6:", zipWith' (*) [2,3,4] [6,7,8,9])
-        print("#7:",eqList "abce" "abcd")
+        print("#7:", eqList "abce" "abcd")

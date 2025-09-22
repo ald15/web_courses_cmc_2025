@@ -36,7 +36,7 @@ minimum' :: (Ord a) => [a] -> a
 minimum' [x] = x
 minimum' (x:xs) = min x (minimum' xs)
 
-
+-- Свёртки
 -- foldl f ac [l1, l2, ... , ln] -> (f (f ac e1) e2) ... en
 
 foldl'' :: (b -> a -> b) -> b -> [a] -> b
@@ -102,6 +102,7 @@ dec' l1 l2 = [(x, y) | x <- l1, y <- l2]
 
 fib' :: [Int]
 fib' = fib1 1 1
+fib1 :: Num t => t -> t -> [t]
 fib1 a b = a:fib1 b (a+b)
 
 
