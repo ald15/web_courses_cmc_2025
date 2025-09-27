@@ -1,6 +1,6 @@
 -- #4
 path :: [(Float, Float)] -> Float
-path l = sum (zipWith d2dots l ( l))
+path l = sum (zipWith d2dots l (tail l))
 
 d2dots :: (Float, Float) -> (Float, Float) -> Float
 d2dots (a, b) (c, d) = sqrt ((a-c)^2 + (b-d)^2)
