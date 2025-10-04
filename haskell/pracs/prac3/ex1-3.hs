@@ -35,40 +35,6 @@ tree31 = Node (+1) (Node (*2) (Node (+5) Empty Empty) Empty) (Node (\x -> x - 3)
 tree32 = Node 10 (Node 7 (Node 8 Empty Empty) Empty) (Node 4 Empty Empty)
 tree33 = Node 11 (Node 14 (Node 13 Empty Empty) Empty) (Node 1 Empty Empty)
 
-
--- #4
-data Stack a = Stack [a] deriving Show
-
-isEmpty :: Stack a -> Bool
-isEmpty (Stack []) = True
-isEmpty _ = False
-
-push :: a -> Stack a -> Stack a
-push x (Stack xs)  = Stack (x:xs)
-
-top :: Stack a -> a
-top (Stack (x:_)) = x
-
-pop :: Stack a -> Stack a
-pop (Stack []) = Stack []
-pop (Stack (x:xs)) = Stack xs
-
-instance Functor Stack where
-    fmap _ (Stack []) = Stack []
-    fmap f (Stack xs) = Stack (map f xs)
-
-instance Eq a => Eq (Stack a) where
-    Stack [] == Stack [] = True
-    Stack [] == _ = False
-    _ == Stack [] = False
-    Stack xs == Stack ys = xs == ys
-
-stack = Stack [1,2,3]
-empty_stack = Stack []
-
-
-
--- Tests
 main :: IO()
 main = do
     print("#1-0: ", tree10 == tree11)
@@ -76,9 +42,3 @@ main = do
     print("#1-2: ", tree10 == tree12)
     print("#2-1: ", addTrees tree21 tree22 == tree23)
     print("#3-1: ", mapTreeToTree tree31 tree32 == tree33)
-    print("#4-1: ", push 0 stack)
-    print("#4-2: ", isEmpty empty_stack, isEmpty stack)
-    print("#4-3: ", top stack)
-    print("#4-4: ", pop stack)
-    print("#4-5: ", fmap (*2) stack)
-    print("#4-6: ", empty_stack == pop (pop (pop stack)),  Stack [1, 2, 3] == stack, Stack [0, 2, 3] == stack)
