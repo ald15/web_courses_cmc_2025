@@ -1,4 +1,3 @@
--- #4
 path :: [(Float, Float)] -> Float
 path l = sum (zipWith d2dots l (tail l))
 

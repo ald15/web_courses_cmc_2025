@@ -11,7 +11,6 @@ divide' x y | y == 0 = Left "Error: divide by zero!"
 -- instance Functor (Either a)
 --     where ...
 
-
 -- Класс Applicative — это один из классов типов, который используется для обработки контекстуальных значений,
 -- таких как значения, обернутые в структуры данных типа Maybe, List, IO и другие.
 class (Functor f) => Applicative f where
